@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Arrays</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <p id="join"></p>
+    <p id="pop1"></p>
+    <p id="pop2"></p>
+    <script>
+      var codingal = [
+        "Coding",
+        "Magic",
+        "Learn",
+        "HotPinkBoiTashdeed",
+        "PinkBoiIndradip",
+        "Nooria",
+      ];
+      document.getElementById("demo").innerHTML = codingal[2];
+      document.getElementById("demo1").innerHTML = codingal[3];
+      document.getElementById("demo2").innerHTML = codingal[4];
+      document.getElementById("demo3").innerHTML = codingal[5];
+
+      document.getElementById("join").innerHTML = codingal.join(" * ");
+
+      codingal.pop();
+      document.getElementById("pop1").innerHTML = codingal;
+      codingal.pop();
+      document.getElementById("pop2").innerHTML = codingal;
+    </script>
+  </body>
+</html>
